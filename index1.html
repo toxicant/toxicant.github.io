@@ -1,11 +1,41 @@
-<html><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>送给小仙女的小心心❤</title>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>刘仙女定制</title>
+    <meta name="keywords" content="滑稽,滑稽官网,huaji">
 
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-image: url(images/xh.jpg);
+            /*background-repeat: no-repeat;*/
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+        }
 
+    </style>
+
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
 
 </head>
-<body id="body" onload="init()">
+<body id="body" onLoad="init()">
 
 <script type="text/javascript" src="js/ThreeCanvas.js"></script>
 <script type="text/javascript" src="js/Snow.js"></script>
@@ -14,8 +44,6 @@
     var SCREEN_WIDTH = window.innerWidth;//
     var SCREEN_HEIGHT = window.innerHeight;
     var container;
-    var particle;//粒子
-
     var camera;
     var scene;
     var renderer;
@@ -43,7 +71,6 @@
 
         renderer = new THREE.CanvasRenderer();
         renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
-        var material = new THREE.ParticleBasicMaterial( { map: new THREE.Texture(particleImage) } );
         //alert("message2");
         for (var i = 0; i < 500; i++) {
             //alert("message");
@@ -104,9 +131,9 @@
 
     function onDocumentTouchEnd (event) {
         // if ( event.touches.length == 0 ) {
-        // 	event.preventDefault();
-        // 	touchEndX = event.touches[ 0 ].pageX ;
-        // 	touchEndY = event.touches[ 0 ].pageY ;
+        //      event.preventDefault();
+        //      touchEndX = event.touches[ 0 ].pageX ;
+        //      touchEndY = event.touches[ 0 ].pageY ;
 
         // }这里存在问题
         var direction = event.changedTouches[ 0 ].pageX - touchStartX;
@@ -176,5 +203,6 @@
         s.parentNode.insertBefore(hm, s);
     })();
 </script>
+
 </body>
 </html>
